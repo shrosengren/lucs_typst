@@ -1,0 +1,149 @@
+---
+title: "The Effects of Quantum Banana Oscillations on Interdimensional Sock Loss."
+date: 2008-02-29
+author:
+  - name: Al Gorithm
+    email: a.gorithm@student.lu.se
+    affiliation: 
+      - name: Lund University
+        city: Lund
+        url: www.lu.se
+
+abstract: | 
+  Quantum Banana Oscillations (QBOs) have long been hypothesized as a contributing factor to the global phenomenon of missing socks. This study presents the first attempt to model the impact of QBOs on interdimensional sock drift (ISD) using a fruit-matrix entanglement approach. Through high-fidelity banana-wave simulations and sock-detector arrays, we observed a statistically significant correlation between QBO frequency and ISD amplitude. Our findings suggest that overlooked banana fluctuations in the quantum field may be responsible for over 42% of all missing left socks.
+
+keywords:
+  - QBS
+  - String Theory
+  - Interdimensional Sock Drift
+
+supervisors:
+  - name: Carl Purman
+    affiliation: Lund University
+    email: carl.purman@lu.se
+
+
+show_draftmode: true
+show_titlepage: true
+
+bibliography: "references.bib"
+
+
+format:
+  lucs-typst:
+    keep-typ: true
+
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+library(ggplot2)
+```
+
+
+# Introduction
+
+The unexplained disappearance of socks during routine laundry has baffled scientists and philosophers alike. Traditional hypotheses focus on mechanical errors or domestic forgetfulness, but recent developments in quantum nonsense theory propose a more exotic cause.
+
+## Background on Sock Loss Phenomena
+
+The Sock Loss Paradox (SLP) refers to the empirically observed tendency for socks to vanish inexplicably, most often resulting in unmatched pairs. Previous research [e.g., @sniffle2019wormholes] suggested wormholes or spontaneous self-destruction. However, these theories fail to account for the banana resonance factor.
+
+## Quantum Banana Oscillations
+
+QBOs are subatomic vibrations detected in fruit-adjacent particles, particularly those within potassium-heavy matrices [@peel2021quantum]. These oscillations produce low-frequency tremors that can subtly warp the fabric of reality.
+
+### Entanglement with Laundry Systems
+
+Recent studies by @sockington2022spin have shown that banana particles become entangled with cotton fibers under spin-dry conditions, creating a theoretical "Lemon-Sock Singularity" (LSS) that may bridge to parallel dimensions.
+
+#### Qualities of Lanana-Sock Sinularity
+
+It is yet unclear what the qualities of LSS are, though it is likely it contributes significantly to the loss of socks.
+
+# Method
+
+We constructed a Sock Detection Array (SDA) calibrated to identify socks entering quantum decoherence states (see @tbl-specifications). Three banana masses were oscillated at frequencies ranging from 3.14 to 42.0 Hz within a magnetically shielded washing unit. Sock pairs (N = 100) were tagged and observed across 10 laundry cycles.
+
+|    Washer model   |     Spec     |
+|:----:|----:|
+| Spin-o-Matic 9000 | 80% Cotton   |
+| Quantum-Organic   | 20% Nylon    |
+| Spin-o-Matic 2000 | Triple-layer |
+
+: Specifications {#tbl-specifications}
+
+Environmental variables, such as static charge and detergent pH, were controlled. All observations were recorded via banana-spectrum interferometry.
+
+```{=typst}
+$ sum_(k=0)^n k
+    &= 1 + ... + n \
+    &= (n(n+1)) / 2 $
+```
+
+
+
+To enhance reliability, we repeated the experiment across three independent washers located in separate Faraday cages to eliminate external electromagnetic noise. Each washer was lined with potassium-sensitive film to detect micro-resonance traces, and all banana samples were sourced from a certified quantum-organic farm to ensure entanglement purity. Laundry loads were randomized and monitored in real time by a banana-aware AI trained on sock topology patterns. All cycles were timestamped and synced with atomic clocks to track temporal distortions possibly caused by QBO interference.
+
+# Results
+
+We detected a strong inverse correlation between QBO frequency and the presence of the corresponding sock post-cycle. The peak disappearance rate occurred at a resonance of 23 Hz, aligning with the known Schrödinger-Banana threshold. For reference, please see @tbl-results.
+
+```{=typst} 
+#set figure(
+  placement: auto,
+  scope: "parent")
+```
+
+```{r tbl-span-results, echo=FALSE}
+#| tbl-cap: "Effects of QBO Frequency on Sock Loss"
+
+# Create mock data
+qbo_data <- data.frame(
+  QBO_Frequency_Hz = c(3.14, 13.7, 23.0, 33.3, 42.0),
+  Avg.SocksLost_pc = c(2, 15, 42, 25, 1),
+  Sock_Residue_Detected = c("No", "Yes", "Yes", "No", "Yes"),
+  Notes = c("Control group", 
+              "Mild banana field distortion", 
+              "Maximum sock displacement", 
+              "Socks reappeared inverted", 
+              "Banana saturation achieved")
+)
+
+# Print table with title
+knitr::kable(qbo_data, format = "pipe", col.names = c("QBO Frequency (Hz)","Avg. SocksLost (%)","Sock Residue Detected","Notes"))
+```
+
+```{=typst} 
+#set figure(
+  placement: none,
+  scope: "column")
+```
+
+Post-experiment inspection of the banana masses revealed discoloration and structural fatigue near the 23 Hz resonance frequency, indicating intense quantum feedback. Infrared imaging of the drum chamber during high-frequency cycles showed brief flashes of what researchers described as "spatial shimmering," which may correspond to the moment of dimensional phase shift. In one notable instance, a sock returned five minutes after the cycle ended, completely dry and smelling faintly of lavender—despite no lavender products being used.
+
+Interestingly, socks with synthetic fiber content above 60% exhibited a slightly lower disappearance rate across all frequencies. This suggests that artificial materials may resist banana-field entanglement to a greater degree than organic cotton. Furthermore, striped socks were disproportionately affected compared to solid-colored socks, hinting at a possible interaction between visual complexity and quantum field susceptibility.
+
+```{r fig-plot, echo=FALSE}
+#| fig-cap: "QBO Frequency vs Sock Loss"
+
+# Plot using ggplot2
+ggplot(qbo_data, aes(x = QBO_Frequency_Hz, y = Avg.SocksLost_pc)) +
+  geom_line(color = "purple") +
+  geom_point(size = 3, color = "darkorange") +
+  labs(
+    title = "QBO Frequency vs Sock Loss",
+    x = "QBO Frequency (Hz)",
+    y = "Average Socks Lost (%)"
+  ) +
+  theme_minimal()
+```
+
+# Discussion
+
+Our data supports the hypothesis that QBOs, particularly around 23 Hz, destabilize sock matter within localized dimensional membranes. The "missing" socks are not destroyed but phase-shifted, possibly explaining sightings of lone socks in unrelated households.
+
+We also note that banana field saturation reduces the probability of sock loss, suggesting a protective interference effect. However, ethical concerns around large-scale fruit quantum manipulation must be addressed.
+
+Future research may explore whether other fruits (e.g., plums or durians) exhibit similar properties or if left-handed socks are inherently more susceptible due to asymmetrical spin alignment.
+
