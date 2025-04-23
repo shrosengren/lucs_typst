@@ -116,10 +116,11 @@ grid(
   paper: "a4",
   lang: "en",
   region: "US",
-  font: "Stix Two Text",
+  font: "Times New Roman",
   fontsize: 10pt,
   title-size: 24pt,
   subtitle-size: 18pt,
+  heading-family: "Times New Roman",
   heading-weight: "bold",
   heading-style: "normal",
   heading-color: black,
@@ -164,7 +165,7 @@ show heading.where(
 show heading.where(
   level: 3
 ): it =>  parbreak() + text(
-  size: 11pt,
+  size: fontsize,
   weight: 700,
   it.body + [.],
 )
@@ -173,7 +174,7 @@ show heading.where(
 show heading.where(
   level: 4
 ): it => text(
-  size: 11pt,
+  size: fontsize,
   weight: "regular",
   style: "italic",
   it.body + [.],
