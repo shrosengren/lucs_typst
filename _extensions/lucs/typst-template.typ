@@ -141,23 +141,25 @@ grid(
 
 // SETS
 // HEADERS
-//set heading(numbering: "1")
 
-let number-until-with(max-level, schema) = (..numbers) => {
-  if numbers.pos().len() <= max-level {
-    numbering(schema, ..numbers)
-  }
-}
+//let number-until-with(max-level, schema) = (..numbers) => {
+//  if numbers.pos().len() <= max-level {
+//    numbering(schema, ..numbers)
+//  }
+//}
 
-set heading(numbering: number-until-with(number-depth, sectionnumbering))
+//set heading(numbering: number-until-with(number-depth, sectionnumbering))
+
 // h1
+
+set heading(numbering:"1.1a1")
 
 show heading.where(
   level: 1
 ): it => block(width: 100%, above: 20pt, below: 12pt)[
     #set align(left)
     #set text(14pt, weight: 700)
-    #it.body
+    #it
 ]
 // h2
 show heading.where(
@@ -176,7 +178,7 @@ show heading.where(
 ): it =>  parbreak() + text(
   size: fontsize,
   weight: 700,
-  it.body + [.],
+  [#context [#counter(heading).display()] ] + it.body + [.],
 )
 
 // h4
@@ -296,7 +298,7 @@ emph[
   
   #if keywords != none {block(inset: (y:6pt))[
     #text(weight:700)[Keywords:] #(keywords
-    .join(", ", last: ", and ")).
+    .join(", ")).
 
     ]
   }
