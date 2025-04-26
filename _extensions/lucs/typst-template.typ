@@ -125,7 +125,7 @@ grid(
   heading-style: "normal",
   heading-color: black,
   heading-line-height: 0.65em,
-  sectionnumbering: "1a",
+  sectionnumbering: "1.1a1",
   pagenumbering: "1",
   number-depth: 2,
   toc: false,
@@ -152,7 +152,7 @@ grid(
 
 // h1
 
-set heading(numbering:"1.1a1")
+set heading(numbering:sectionnumbering)
 
 show heading.where(
   level: 1
