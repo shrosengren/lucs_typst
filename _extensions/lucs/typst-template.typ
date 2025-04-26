@@ -125,8 +125,9 @@ grid(
   heading-style: "normal",
   heading-color: black,
   heading-line-height: 0.65em,
-  sectionnumbering: "1",
+  sectionnumbering: "1a",
   pagenumbering: "1",
+  number-depth: 2,
   toc: false,
   toc_title: none,
   toc_depth: none,
@@ -140,7 +141,15 @@ grid(
 
 // SETS
 // HEADERS
-set heading(numbering: "1")
+//set heading(numbering: "1")
+
+let number-until-with(max-level, schema) = (..numbers) => {
+  if numbers.pos().len() <= max-level {
+    numbering(schema, ..numbers)
+  }
+}
+
+set heading(numbering: number-until-with(number-depth, sectionnumbering))
 // h1
 
 show heading.where(
@@ -148,7 +157,7 @@ show heading.where(
 ): it => block(width: 100%, above: 20pt, below: 12pt)[
     #set align(left)
     #set text(14pt, weight: 700)
-    #it
+    #it.body
 ]
 // h2
 show heading.where(
@@ -157,8 +166,8 @@ show heading.where(
   #text(
   size: 10pt,
   weight: 400,
-  style: "italic")[
-      #it.body
+  style: "italic")[ 
+      #it 
    ]
 ]
 // h3
@@ -184,7 +193,11 @@ show heading.where(
 
 show figure: set block(spacing: 1.2em + 3pt)
 
-show figure.caption: emph
+show figure.caption: it => {
+  text(size:9pt)[
+    #text(weight:700)[#it.supplement #context it.counter.display(it.numbering).]
+  #it.body]
+}
 
 show figure.where(
   kind: table
@@ -281,8 +294,10 @@ emph[
   } 
   #abstract
   
-  #if keywords != () {block(inset: (y:6pt))[
-    Keywords: #keywords
+  #if keywords != none {block(inset: (y:6pt))[
+    #text(weight:700)[Keywords:] #(keywords
+    .join(", ", last: ", and ")).
+
     ]
   }
 ] 
@@ -307,8 +322,6 @@ if toc {block(inset: (top: 6pt))
 
 // Document
 doc
-
-
 
 }
 

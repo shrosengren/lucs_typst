@@ -110,6 +110,9 @@ $endif$
 $endfor$
     ),
 $endif$
+$if(keywords)$
+  keywords: ($for(keywords)$"$keywords$", $endfor$),
+$endif$
 $if(show_titlepage)$
   show_titlepage: $show_titlepage$,
 $endif$

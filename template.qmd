@@ -43,9 +43,9 @@ library(ggplot2)
 
 # Introduction
 
-The unexplained disappearance of socks during routine laundry has baffled scientists and philosophers alike. Traditional hypotheses focus on mechanical errors or domestic forgetfulness, but recent developments in quantum nonsense theory propose a more exotic cause.
+The unexplained disappearance of socks during routine laundry has baffled scientists and philosophers alike. Traditional hypotheses focus on mechanical errors or domestic forgetfulness, but recent developments in quantum nonsense theory propose a more exotic cause. 
 
-## Background on Sock Loss Phenomena
+## Background on Sock Loss Phenomena {#sec-background}
 
 The Sock Loss Paradox (SLP) refers to the empirically observed tendency for socks to vanish inexplicably, most often resulting in unmatched pairs. Previous research [e.g., @sniffle2019wormholes] suggested wormholes or spontaneous self-destruction. However, these theories fail to account for the banana resonance factor.
 
@@ -87,7 +87,7 @@ To enhance reliability, we repeated the experiment across three independent wash
 
 # Results
 
-We detected a strong inverse correlation between QBO frequency and the presence of the corresponding sock post-cycle. The peak disappearance rate occurred at a resonance of 23 Hz, aligning with the known Schrödinger-Banana threshold. For reference, please see @tbl-results.
+We detected a strong inverse correlation between QBO frequency and the presence of the corresponding sock post-cycle. The peak disappearance rate occurred at a resonance of 23 Hz, aligning with the known Schrödinger-Banana threshold. For reference, please see @tbl-span-results.
 
 ```{=typst} 
 #set figure(
@@ -120,7 +120,7 @@ knitr::kable(qbo_data, format = "pipe", col.names = c("QBO Frequency (Hz)","Avg.
   scope: "column")
 ```
 
-Post-experiment inspection of the banana masses revealed discoloration and structural fatigue near the 23 Hz resonance frequency, indicating intense quantum feedback. Infrared imaging of the drum chamber during high-frequency cycles showed brief flashes of what researchers described as "spatial shimmering," which may correspond to the moment of dimensional phase shift. In one notable instance, a sock returned five minutes after the cycle ended, completely dry and smelling faintly of lavender—despite no lavender products being used.
+Post-experiment inspection of the banana masses revealed discoloration and structural fatigue near the 23 Hz resonance frequency, indicating intense quantum feedback, as mentioned in @sec-background. Infrared imaging of the drum chamber during high-frequency cycles showed brief flashes of what researchers described as "spatial shimmering," which may correspond to the moment of dimensional phase shift. In one notable instance, a sock returned five minutes after the cycle ended, completely dry and smelling faintly of lavender—despite no lavender products being used.
 
 Interestingly, socks with synthetic fiber content above 60% exhibited a slightly lower disappearance rate across all frequencies. This suggests that artificial materials may resist banana-field entanglement to a greater degree than organic cotton. Furthermore, striped socks were disproportionately affected compared to solid-colored socks, hinting at a possible interaction between visual complexity and quantum field susceptibility.
 
@@ -147,3 +147,6 @@ We also note that banana field saturation reduces the probability of sock loss, 
 
 Future research may explore whether other fruits (e.g., plums or durians) exhibit similar properties or if left-handed socks are inherently more susceptible due to asymmetrical spin alignment.
 
+## Acknowledgments {.appendix}
+
+I am grateful for the insightful comments offered by the anonymous peer reviewers at Books & Texts. The generosity and expertise of one and all have improved this study in innumerable ways and saved me from many errors; those that inevitably remain are entirely my own responsibility.
