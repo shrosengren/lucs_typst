@@ -96,6 +96,9 @@ $endif$
 $if(toc-title)$
   toc_title: [$toc-title$],
 $endif$
+$if(number-depth)$
+number-depth: $number-depth$,
+$endif$
 $if(toc-indent)$
   toc_indent: $toc-indent$,
 $endif$
